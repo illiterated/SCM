@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('SCM for Java Code') {
             steps{
-                git changelog: false, url: 'https://github.com/.....'
+                git credentialsId: '569666e8-eab9-4ccc-826e-d593c4915ff9', url: 'https://github.com/illiterated/maventest'
                 echo 'Polling to Developers SCM'
             }
         }
